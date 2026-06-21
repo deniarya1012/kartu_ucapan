@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Universe</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body 
+style=" background-image: url( https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-size: cover; background-repeat: no-repeat; background-position: center; height: 100vh;" class="flex justify-center h-screen items-center "   
+
+
+>
+ 
+<div class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-gray-500 rounded-xl text-center animate__animated animate__backInDown m-8 w-80" id="kartu" >
+    <h1 class="text-3xl">Happy Birthday My Universe🤍!</h1>
+    <h1 class="text-4xl text-pink-500 font-bold animate__animated animate__pulse animate__infinite">Siti Mulyani</h1>
+    <button class="bg-pink-500 hover:bg-pink-700 mt-3 text-white font-bold py-2 px-5 rounded transition ease-in-out w-full animate__animated animate__delay-1s animate__tada" onclick="ubahKartu()"
+    >Klik disini Sayaaaaangku!</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.1.0/dist/confetti.min.js"></script>
+<script>confetti({
+    position: { x: 0, y: 0 },	// Origin position
+    count: 100,			// Number of particles
+    size: 1,			// Size of the particles
+    velocity: 200,		// Initial particle velocity
+    fade: false			// Particles fall off the screen, or fade out
+});
+let kartu = document.getElementById("kartu");
+function ubahKartu(){
+  kartu.innerHTML = `<h1 class="font-semibold text-wrap animate__animated animate__zoomIn">Sayaaangkuu selamat ulang tahun! Semoga di umur yang baru sayaaaang selalu diberikan kesehatan, diberikan rezeki yang melimpah dan dilancarkan segala urusannya! Amiinn Amiinn Ya Rabbal Alamin! I Love You My Universe🤍!</h1>
+  <h2 class="mt-3 animate__animated animate__delay-1s animate__fadeIn">-With Love, Deni-</h2>
+<button class="bg-pink-300 hover:bg-pink-600 mt-3 text-white font-bold py-2 px-5 rounded transition ease-in-out w-full animate__animated animate__delay-1s animate__tada" onclick="refresh()"
+  >Tutup</button>
+  `}
+
+  function refresh(){
+    location.reload();
+  }
+</script>
+<audio autoplay loop>
+  <source src="http://youtuberepeater.com/watch?v=xg_Y7Or_hWM#gsc.tab=0&gsc.q=Last%20Night%20on%20Earth&gsc.sort=">
+
+</body>
+</html>
